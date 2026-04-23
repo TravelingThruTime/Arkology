@@ -1,0 +1,27 @@
+# ╔══════════════════════════════════════════════════════════════╗
+# ║  Arkology.org — Caddy Reverse Proxy                         ║
+# ║                                                              ║
+# ║  ALL routes (including /election and /admin) now go to      ║
+# ║  Flask on port 5000. The Node.js election server is no      ║
+# ║  longer required.                                            ║
+# ╚══════════════════════════════════════════════════════════════╝
+
+# ── Local development / LAN access ───────────────────────────────────────────
+localhost, :80 {
+    handle {
+        reverse_proxy localhost:5000
+    }
+}
+
+# ── www redirect ─────────────────────────────────────────────────────────────
+www.arkology.org {
+    redir https://arkology.org{uri} permanent
+}
+
+# ── Production ────────────────────────────────────────────────────────────────
+arkology.org {
+    # Everything → Flask (handles /election, /admin, /charities, etc.)
+    handle {
+        reverse_proxy localhost:5000
+    }
+}
