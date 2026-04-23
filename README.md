@@ -1,4 +1,4 @@
-Includes 6-page Constitution, Budget, UBI via BCH, Election System, Liquid Democracy, and embedded Twitter Clone.
+Includes Citizen Database, 6-page Constitution, Budget, UBI via BCH, Property Ledger, Criminal Records, Election System, Liquid Democracy, and embedded Twitter Clone.
 
 Ask claude.ai to change the domain to something you own. Currently it is set to arkology.org
 If the file size is too big for claude.ai, simply remove caddy.exe
