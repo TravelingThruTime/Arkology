@@ -1,8 +1,9 @@
 Includes 6-page Constitution, Budget, UBI via BCH, Election System, Liquid Democracy, and embedded Twitter Clone.
 
 Ask claude.ai to change the domain to something you own. Currently it is set to arkology.org
+If the file size is too big for claude.ai, simply remove caddy.exe
 
-To Run: Put Caddy.exe, ark.mp4 and ark2.mp4 into the folder. The mp4s are any 640x360 video.
+To Run: Make sure Caddy.exe, ark.mp4 and ark2.mp4 are in the folder. The mp4s are any 640x360 9:16 video.
 Run ark.bat as an administrator. Select option 12, then option 1.
 Run ark.bat as an administrator again. Select option 16. (Caddy HTTPS)
 
